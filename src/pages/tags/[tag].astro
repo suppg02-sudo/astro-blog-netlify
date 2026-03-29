@@ -6,16 +6,31 @@ import Footer from "@components/Footer.astro";
 import Card from "@components/Card";
 import getPostsByTag from "@utils/getPostsByTag";
 import { SITE } from "@config";
-import { getAllPosts } from "@lib/utils";
+import { getCollection } from "astro:content";
 
-const { tag } = Astro.params;
+export async function getStaticPaths() {
+  const entries = await getCollection("blog");
+  const allTags = new Set<string>();
+  
+  entries.forEach((entry) => {
+    entry.data.tags?.forEach((tag) => allTags.add(tag));
+  });
 
-if (!tag) {
-  return Astro.redirect("/tags");
+  return Array.from(allTags).map((tag) => ({
+    params: { tag: tag.toLowerCase().replace(/\s+/g, "-") },
+    props: { tag },
+  }));
 }
 
-const allPosts = await getAllPosts();
-const tagPosts = getPostsByTag(allPosts, tag);
+const { tag } = Astro.props;
+const entries = await getCollection("blog");
+
+const tagPosts = entries
+  .filter((entry) => entry.data.tags?.some((t) => t.toLowerCase().replace(/\s+/g, "-") === Astro.params.tag))
+  .map((entry) => ({
+    ...entry.data,
+    postSlug: entry.data.postSlug || entry.id.replace(/\.md$/, ""),
+  }));
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>

@@ -1,51 +1,29 @@
 ---
 import { SITE } from "@config";
-import Posts from "@layouts/Posts.astro";
 import PostDetails from "@layouts/PostDetails.astro";
-import { getAllPosts, getPostBySlug, getPostEntry } from "@lib/utils";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 
-const { slug } = Astro.params;
-
-if (!slug) {
-  return Astro.redirect("/404");
+export async function getStaticPaths() {
+  const entries = await getCollection("blog");
+  
+  return entries.map((entry) => {
+    const slug = entry.data.postSlug || entry.id.replace(/\.md$/, "");
+    return {
+      params: { slug },
+      props: { entry },
+    };
+  });
 }
 
-const isPage = !isNaN(Number(slug));
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> };
+const { Content } = await render(entry);
 
-let post = null;
-let postEntry = null;
-let paginatedPosts: any[] = [];
-let totalPages = 0;
-let currentPage = 0;
-
-if (isPage) {
-  currentPage = Number(slug);
-  const allPosts = await getAllPosts();
-  totalPages = Math.ceil(allPosts.length / SITE.postPerPage);
-
-  const lastPost = currentPage * SITE.postPerPage;
-  const startPost = lastPost - SITE.postPerPage;
-  paginatedPosts = allPosts.slice(startPost, lastPost);
-} else {
-  post = await getPostBySlug(slug);
-  if (post) {
-    postEntry = await getPostEntry(slug);
-  }
-}
-
-if (!post && !isPage) {
-  return Astro.redirect("/404");
-}
+const frontmatter = {
+  ...entry.data,
+  postSlug: entry.data.postSlug || entry.id.replace(/\.md$/, ""),
+};
 ---
 
-{
-  post && postEntry ? (
-    <PostDetails frontmatter={post} entry={postEntry} />
-  ) : (
-    <Posts
-      posts={paginatedPosts}
-      pageNum={currentPage}
-      totalPages={totalPages}
-    />
-  )
-}
+<PostDetails frontmatter={frontmatter}>
+  <Content />
+</PostDetails>

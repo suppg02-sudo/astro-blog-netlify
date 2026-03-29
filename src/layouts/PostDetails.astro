@@ -6,17 +6,14 @@ import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import PostActions from "@components/PostActions.astro";
 import { SITE } from "@config";
-import type { BlogFrontmatter, PostEntry } from "@lib/utils";
+import type { BlogFrontmatter } from "@lib/utils";
 
 export interface Props {
   frontmatter: BlogFrontmatter;
-  entry: PostEntry;
 }
 
-const { frontmatter, entry } = Astro.props;
+const { frontmatter } = Astro.props;
 const { title, author, description, ogImage, pubDatetime, tags, postSlug } = frontmatter;
-
-const { Content } = await entry.render();
 ---
 
 <Layout title={title} author={author} description={description} ogImage={ogImage}>
@@ -37,7 +34,7 @@ const { Content } = await entry.render();
     <h1 class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
+      <slot />
     </article>
 
     <ul class="tags-container">
