@@ -1,0 +1,51 @@
+---
+import { SITE } from "@config";
+import Posts from "@layouts/Posts.astro";
+import PostDetails from "@layouts/PostDetails.astro";
+import { getAllPosts, getPostBySlug, getPostEntry } from "@lib/utils";
+
+const { slug } = Astro.params;
+
+if (!slug) {
+  return Astro.redirect("/404");
+}
+
+const isPage = !isNaN(Number(slug));
+
+let post = null;
+let postEntry = null;
+let paginatedPosts: any[] = [];
+let totalPages = 0;
+let currentPage = 0;
+
+if (isPage) {
+  currentPage = Number(slug);
+  const allPosts = await getAllPosts();
+  totalPages = Math.ceil(allPosts.length / SITE.postPerPage);
+
+  const lastPost = currentPage * SITE.postPerPage;
+  const startPost = lastPost - SITE.postPerPage;
+  paginatedPosts = allPosts.slice(startPost, lastPost);
+} else {
+  post = await getPostBySlug(slug);
+  if (post) {
+    postEntry = await getPostEntry(slug);
+  }
+}
+
+if (!post && !isPage) {
+  return Astro.redirect("/404");
+}
+---
+
+{
+  post && postEntry ? (
+    <PostDetails frontmatter={post} entry={postEntry} />
+  ) : (
+    <Posts
+      posts={paginatedPosts}
+      pageNum={currentPage}
+      totalPages={totalPages}
+    />
+  )
+}

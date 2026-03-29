@@ -5,45 +5,18 @@ import Footer from "@components/Footer.astro";
 import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import PostActions from "@components/PostActions.astro";
-import { mapPostToFrontmatter, type Post } from "@lib/directus";
-import { marked } from "marked";
+import { SITE } from "@config";
+import type { BlogFrontmatter, PostEntry } from "@lib/utils";
 
 export interface Props {
-  post: Post;
+  frontmatter: BlogFrontmatter;
+  entry: PostEntry;
 }
 
-const { post } = Astro.props;
-const { title, author, description, ogImage, pubDatetime, tags } = mapPostToFrontmatter(post);
+const { frontmatter, entry } = Astro.props;
+const { title, author, description, ogImage, pubDatetime, tags, postSlug } = frontmatter;
 
-// Pre-process content to handle Hugo-style shortcodes
-let rawContent = post.content || "";
-rawContent = rawContent.replace(/\{\{<\s*mermaid\s*>\}\}/g, "```mermaid");
-rawContent = rawContent.replace(/\{\{<\s*\/mermaid\s*>\}\}/g, "```");
-rawContent = rawContent.replace(/\{\{<\s*chart\s*>\}\}/g, "```chart");
-rawContent = rawContent.replace(/\{\{<\s*\/chart\s*>\}\}/g, "```");
-
-// Custom marked renderer to output specific tags for mermaid and charts
-marked.use({
-  renderer: {
-    code({ text, lang }: { text: string; lang?: string }) {
-      if (lang === "mermaid") {
-        // Add a unique ID that mermaid can use
-        const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
-        return `<div id="${id}" class="mermaid">${text}</div>`;
-      }
-      if (lang === "chart") {
-        const encoded = encodeURIComponent(text);
-        return `<div class="chart-container" style="position: relative; height:40vh; width:100%; margin: 2rem 0;">
-                  <canvas class="chart-js-canvas" data-chart="${encoded}"></canvas>
-                </div>`;
-      }
-      // Return false to use the default renderer for other languages
-      return false;
-    }
-  }
-});
-
-const content = await marked.parse(rawContent);
+const { Content } = await entry.render();
 ---
 
 <Layout title={title} author={author} description={description} ogImage={ogImage}>
@@ -63,7 +36,9 @@ const content = await marked.parse(rawContent);
   <main id="main-content">
     <h1 class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl" set:html={content} />
+    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
+      <Content />
+    </article>
 
     <ul class="tags-container">
       {tags.map(tag => <Tag name={tag} />)}
@@ -71,106 +46,13 @@ const content = await marked.parse(rawContent);
 
     <PostActions 
       postTitle={title} 
-      postSlug={post.slug || ''} 
-      postUrl={`http://ubuntu4:3002/posts/${post.slug || ''}`}
+      postSlug={postSlug || ''} 
+      postUrl={`${SITE.website}/posts/${postSlug || ''}`}
       tags={tags}
     />
   </main>
   <Footer />
 </Layout>
-
-<script is:inline type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(runMermaid, 2000);
-    setTimeout(initCharts, 2500);
-  });
-  
-  function runMermaid() {
-    if (typeof mermaid === 'undefined') {
-      console.log('Mermaid undefined - CDN not loaded');
-      return;
-    }
-    
-    var divs = document.querySelectorAll('.mermaid');
-    console.log('Mermaid: found', divs.length, 'diagrams');
-    
-    divs.forEach(function(div, idx) {
-      var graph = div.textContent.trim();
-      mermaid.render('mermaid' + idx, graph).then(function(info) {
-        div.innerHTML = info.svg;
-      }).catch(function(err) {
-        console.error('Mermaid error:', err.message);
-      });
-    });
-  }
-
-  function initCharts() {
-    if (typeof Chart === 'undefined') {
-      console.log('Chart.js undefined - CDN not loaded');
-      return;
-    }
-
-    var canvases = document.querySelectorAll('.chart-js-canvas');
-    console.log('Chart.js: found', canvases.length, 'canvases');
-
-    canvases.forEach(function(canvas, idx) {
-      var encoded = canvas.getAttribute('data-chart');
-      if (!encoded) return;
-
-      try {
-        var json = decodeURIComponent(encoded);
-        var config = JSON.parse(json);
-        new Chart(canvas, config);
-        console.log('Chart.js: rendered chart', idx);
-      } catch(e) {
-        console.error('Chart.js error:', idx, e.message);
-      }
-    });
-  }
-</script>
-
-<!-- Collapsible Code Blocks -->
-<script is:inline>
-  function makeCodeCollapsible() {
-    document.querySelectorAll('.prose pre').forEach(function(pre) {
-      if (pre.parentElement.tagName === 'DETAILS' || pre.dataset.collapsible === 'true') return;
-      pre.dataset.collapsible = 'true';
-      
-      const code = pre.querySelector('code');
-      let lang = 'Code';
-      if (code && code.className) {
-        const match = code.className.match(/language-(\w+)/);
-        if (match) lang = match[1].toUpperCase();
-      }
-      
-      const details = document.createElement('details');
-      details.open = false;
-      const summary = document.createElement('summary');
-      summary.style.cursor = 'pointer';
-      summary.style.fontFamily = 'monospace';
-      summary.style.fontSize = '0.75em';
-      summary.style.padding = '6px 10px';
-      summary.style.background = 'rgba(99, 102, 241, 0.08)';
-      summary.style.color = 'rgba(99, 102, 241, 0.7)';
-      summary.style.borderRadius = '4px';
-      summary.style.marginBottom = '0';
-      summary.style.listStyle = 'none';
-      summary.style.display = 'flex';
-      summary.style.alignItems = 'center';
-      summary.innerHTML = '<span style="margin-right:6px;opacity:0.5">▸</span>' + lang + '<span style="opacity:0.4;margin-left:6px">(click)</span>';
-      
-      details.appendChild(summary);
-      pre.parentNode.insertBefore(details, pre);
-      details.appendChild(pre);
-    });
-  }
-  
-  // Run on load and after mermaid renders
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(makeCodeCollapsible, 500);
-    setTimeout(makeCodeCollapsible, 3000);
-  });
-</script>
 
 <style>
   main {
@@ -181,43 +63,5 @@ const content = await marked.parse(rawContent);
   }
   .tags-container {
     @apply my-8;
-  }
-  
-  /* Mermaid centering - transparent background */
-  .mermaid {
-    @apply flex justify-center my-8;
-    background: transparent;
-    min-width: 100%;
-    overflow-x: auto;
-  }
-  .mermaid svg {
-    background: transparent;
-    width: 100%;
-    height: auto;
-    min-width: 800px;
-    max-width: 1200px;
-  }
-  
-  /* Chart container - transparent background */
-  .chart-container {
-    background: transparent;
-  }
-  
-  /* Collapsible code blocks */
-  .prose details {
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid rgba(99, 102, 241, 0.15);
-  }
-  .prose details[open] > summary {
-    background: rgba(99, 102, 241, 0.12);
-  }
-  .prose details[open] > summary span:first-child {
-    transform: rotate(90deg);
-    display: inline-block;
-  }
-  .prose details pre {
-    margin: 0;
-    border-radius: 0;
   }
 </style>

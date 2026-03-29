@@ -1,11 +1,12 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://astro-blog-netlify.netlify.app",
   output: "static",
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap(), react()],
   markdown: {
     shikiConfig: {
       theme: "github-dark",

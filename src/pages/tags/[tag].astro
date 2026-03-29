@@ -1,0 +1,36 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Card from "@components/Card";
+import getPostsByTag from "@utils/getPostsByTag";
+import { SITE } from "@config";
+import { getAllPosts } from "@lib/utils";
+
+const { tag } = Astro.params;
+
+if (!tag) {
+  return Astro.redirect("/tags");
+}
+
+const allPosts = await getAllPosts();
+const tagPosts = getPostsByTag(allPosts, tag);
+---
+
+<Layout title={`Tag:${tag} | ${SITE.title}`}>
+  <Header activeNav="tags" />
+  <Main
+    pageTitle={`Tag:${tag}`}
+    pageDesc={`All the articles with the tag "${tag}".`}
+  >
+    <ul>
+      {
+        tagPosts.map((data) => (
+          <Card href={`/posts/${data.postSlug}`} frontmatter={data} />
+        ))
+      }
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

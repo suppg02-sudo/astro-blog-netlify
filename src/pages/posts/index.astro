@@ -1,0 +1,12 @@
+---
+import { SITE } from "@config";
+import Posts from "@layouts/Posts.astro";
+import { getAllPosts } from "@lib/utils";
+
+const allPosts = await getAllPosts();
+
+const totalPages = Math.ceil(allPosts.length / SITE.postPerPage);
+const paginatedPosts = allPosts.slice(0, SITE.postPerPage);
+---
+
+<Posts posts={paginatedPosts} pageNum={1} totalPages={totalPages} />

@@ -1,0 +1,20 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+
+const pageTitle = "404 - Page Not Found";
+const pageDesc = "The page you are looking for does not exist.";
+---
+
+<Layout title={pageTitle}>
+  <Header />
+  <Main pageTitle={pageTitle} pageDesc={pageDesc}>
+    <p class="text-center">
+      The page you are looking for does not exist. 
+      <a href="/" class="text-skin-accent underline">Go home</a>.
+    </p>
+  </Main>
+  <Footer />
+</Layout>
