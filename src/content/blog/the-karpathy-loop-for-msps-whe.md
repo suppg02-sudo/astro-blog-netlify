@@ -19,6 +19,9 @@ This is the practical application guide.
 
 ## The Short Answer
 
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzgwIiBzdHlsZT0id2lkdGg6MTAwJTsgbWF4LXdpZHRoOjUwMHB4OyBoZWlnaHQ6YXV0bzsgZGlzcGxheTpibG9jazsiPgo8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM4MCIgZmlsbD0iIzBmMTcyYSIvPgo8ZGVmcz4KICAgICAgICAgIDxtYXJrZXIgaWQ9ImFycm93IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iNyIgcmVmWD0iOSIgcmVmWT0iMy41IiBvcmllbnQ9ImF1dG8iPgogICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCwgMTAgMy41LCAwIDciIGZpbGw9IiM2NDc0OGIiLz4KICAgICAgICAgIDwvbWFya2VyPgogICAgICAgIDwvZGVmcz4KPGxpbmUgeDE9IjI1MCIgeTE9Ijc1LjAiIHgyPSIyNTAiIHkyPSIxNzAiIHN0cm9rZT0iIzQ3NTU2OSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBzdHJva2UtZGFzaGFycmF5PSI0Ii8+CjxsaW5lIHgxPSIxNTAuMCIgeTE9IjI5MCIgeDI9IjIzNSIgeTI9IjIwMCIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4KPGxpbmUgeDE9IjM1MC4wIiB5MT0iMjkwIiB4Mj0iMjY1IiB5Mj0iMjAwIiBzdHJva2U9IiM0NzU1NjkiIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPgo8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxOTAiIHI9IjMwIiBmaWxsPSIjMWUyOTNiIiBzdHJva2U9IiM2NDc0OGIiIHN0cm9rZS13aWR0aD0iMSIvPgo8dGV4dCB4PSIyNTAiIHk9IjE5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSI+VGhlClRyaXBsZXQ8L3RleHQ+CjxyZWN0IHg9IjE4MC4wIiB5PSIyNS4wIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjUwIiByeD0iOCIgZmlsbD0iIzNiODJmNiIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjEiLz4KPHRleHQgeD0iMjUwLjAiIHk9IjU1LjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiPkVkaXRhYmxlIEZpbGU8L3RleHQ+Cjx0ZXh0IHg9IjI1MCIgeT0iOTEuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSIjOTRhM2I4IiBmb250LXdlaWdodD0ibm9ybWFsIj5UaGUgY29udHJvbCBzdXJmYWNlPC90ZXh0Pgo8cmVjdCB4PSIxMC4wIiB5PSIyNjUuMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI1MCIgcng9IjgiIGZpbGw9IiMxMGI5ODEiIHN0cm9rZT0iIzEwYjk4MSIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjx0ZXh0IHg9IjgwLjAiIHk9IjI5NS4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIj5PbmUgTWV0cmljPC90ZXh0Pgo8dGV4dCB4PSI4MCIgeT0iMzMxLjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzk0YTNiOCIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+SG93IHlvdSBtZWFzdXJlIHN1Y2Nlc3M8L3RleHQ+CjxyZWN0IHg9IjM1MC4wIiB5PSIyNjUuMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSI1MCIgcng9IjgiIGZpbGw9IiMxNGI4YTYiIHN0cm9rZT0iIzE0YjhhNiIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjx0ZXh0IHg9IjQyMC4wIiB5PSIyOTUuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InN5c3RlbS11aSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSI+Rml4ZWQgVGltZSBCdWRnZXQ8L3RleHQ+Cjx0ZXh0IHg9IjQyMCIgeT0iMzMxLjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzk0YTNiOCIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+SG93IGxvbmcgcGVyIGN5Y2xlPC90ZXh0Pgo8L3N2Zz4=" alt="Karpathy Triplet Anatomy" style="width:100%; height:auto; display:block; margin:1.5rem auto; max-width:500px;" />
+
+
 You start with ticket triage. Not because it is the sexiest problem — because it is the one where you already have the data, the metric is objective, failure is invisible to clients, and improvement pays immediately in technician time saved.
 
 ## Why MSPs Are Perfectly Positioned
@@ -26,7 +29,7 @@ You start with ticket triage. Not because it is the sexiest problem — because 
 Most organizations struggle with the Karpathy Loop prerequisites because they do not have structured data, clear metrics, or sandboxed environments. MSPs have all three by default:
 
 | Prerequisite | What Most Orgs Lack | What MSPs Already Have |
-|-------------|---------------------|----------------------|
+| ------------ | ------------------- | ---------------------- |
 | Structured data | Ad hoc knowledge in Slack, emails, heads | PSA ticket history with categories, priorities, time logs |
 | Objective metrics | Guessing at quality, measuring activity | SLA compliance, first-response time, resolution time, satisfaction scores |
 | Sandboxed environments | Production is the only environment | Test tenants in RMM, staging networks, lab environments |
@@ -39,12 +42,12 @@ The MSP that recognises it is already sitting on the infrastructure for auto-imp
 
 You need the Karpathy Triplet: one editable surface, one metric, one time budget. Here are the three that make sense for an MSP in month one.
 
-### 1. Ticket Triage (Start Here)
+### 1\. Ticket Triage \(Start Here\)
 
 **Why first**: Your PSA has months or years of ticket data with known correct categorisations. Every ticket that was re-categorised by a technician is a labelled training example. You have thousands of them.
 
 | Component | Detail |
-|-----------|--------|
+| --------- | ------ |
 | Edit surface | A classification rules file (JSON/YAML mapping symptoms to categories and priorities) |
 | Metric | % of tickets correctly categorised on first pass without human correction |
 | Time budget | 5 minutes per batch of 50 historical tickets |
@@ -61,12 +64,12 @@ You need the Karpathy Triplet: one editable surface, one metric, one time budget
 
 **Why this is safe**: The agent only touches the classification rules file. It cannot modify the PSA itself, cannot close tickets, cannot contact clients. If a rule is bad, a human sees the misroute and fixes it — exactly what happens today, except now 80% fewer misroutes happen.
 
-### 2. Alert Triage and Noise Reduction
+### 2\. Alert Triage and Noise Reduction
 
 **The pain**: Your RMM generates thousands of alerts per day. Most are noise. Your NOC team spends hours dismissing false positives. Real alerts get lost in the flood. Clients complain about slow response to actual incidents.
 
 | Component | Detail |
-|-----------|--------|
+| --------- | ------ |
 | Edit surface | Alert threshold configuration (YAML/JSON with per-device-type, per-client thresholds) |
 | Metric | False positive rate must drop while catch rate stays above 98% |
 | Time budget | Evaluate against 24 hours of historical alerts with known outcomes |
@@ -83,12 +86,12 @@ You need the Karpathy Triplet: one editable surface, one metric, one time budget
 
 **The safety mechanism**: Every threshold change is logged. If a real alert is suppressed, it shows up in the daily review. The agent cannot suppress alerts entirely — it can only adjust numeric thresholds within human-approved bounds.
 
-### 3. Script Library Optimisation
+### 3\. Script Library Optimisation
 
 **The pain**: You have hundreds of PowerShell and Bash scripts for routine tasks — new user provisioning, server health checks, backup verification, permission audits. Some are years old. Some have edge case bugs. Some are slow. Nobody has time to review and improve them.
 
 | Component | Detail |
-|-----------|--------|
+| --------- | ------ |
 | Edit surface | One script at a time (the agent can only modify the target script) |
 | Metric | Script passes existing test suite AND runs faster / handles more edge cases |
 | Time budget | 30 seconds per script execution, max 50 variations per script overnight |
@@ -110,7 +113,7 @@ You need the Karpathy Triplet: one editable surface, one metric, one time budget
 Where each loop lands and when to start it:
 
 | Domain | Loop Target | When to Start | Risk Level |
-|--------|-----------|---------------|-----------|
+| ------ | ----------- | ------------- | ---------- |
 | Ticket triage | Classification rules file | **Month 1** | Low — sandboxed in PSA |
 | Alert tuning | Threshold configs | **Month 1** | Low — revertable configs |
 | Script library | PowerShell/Bash scripts | **Month 1** | Low — lab environment |
@@ -125,7 +128,7 @@ Where each loop lands and when to start it:
 Before you start any loop, you need these in place:
 
 | Item | What It Looks Like at an MSP | How to Get It |
-|------|----------------------------|---------------|
+| ---- | ---------------------------- | ------------- |
 | **Structured ticket history** | PSA export with category, priority, re-categorisation flags | Export from ConnectWise/AutoTask/HaloITSM |
 | **Labelled test set** | 500+ tickets where you know the correct category | Use re-categorised tickets as ground truth |
 | **Sandbox environment** | Test PSA instance or staging RMM tenant | Your existing lab/dev environment |
@@ -137,16 +140,18 @@ Before you start any loop, you need these in place:
 ## What Not to Touch (Yet)
 
 | Domain | Why Not Now | When |
-|--------|------------|------|
+| ------ | ----------- | ---- |
 | Client-facing chatbots | Failure is visible to clients | After 3 months of internal loops proving stable |
 | Compliance workflows | Regulatory risk from automated changes | After governance framework is built |
 | Billing / invoicing | Direct revenue impact | After auto-improve is trusted from 6+ months of results |
 | Security policy enforcement | One wrong change = breach | Only with explicit client approval and full audit trail |
 
 ## The 90-Day Roadmap
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgMjAwIiBzdHlsZT0id2lkdGg6MTAwJTsgbWF4LXdpZHRoOjcwMHB4OyBoZWlnaHQ6YXV0bzsgZGlzcGxheTpibG9jazsiPgo8cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBmMTcyYSIvPgo8ZGVmcz4KICAgICAgICAgIDxtYXJrZXIgaWQ9ImFycm93IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iNyIgcmVmWD0iOSIgcmVmWT0iMy41IiBvcmllbnQ9ImF1dG8iPgogICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCwgMTAgMy41LCAwIDciIGZpbGw9IiM2NDc0OGIiLz4KICAgICAgICAgIDwvbWFya2VyPgogICAgICAgIDwvZGVmcz4KPHJlY3QgeD0iNDAiIHk9IjcwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjcwIiByeD0iOCIgZmlsbD0iIzNiODJmNiIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjEiLz4KPHRleHQgeD0iNjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IndoaXRlIiBmb250LXdlaWdodD0iYm9sZCI+RGF5cyAxLTMwPC90ZXh0Pgo8dGV4dCB4PSI2MCIgeT0iMTIwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiBmb250LXdlaWdodD0iNjAwIj5UaWNrZXQgVHJpYWdlPC90ZXh0Pgo8dGV4dCB4PSI2MCIgeT0iMTQwIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjg1Ij5CdWlsZCB0aGUgZmlyc3QgbG9vcDwvdGV4dD4KPGxpbmUgeDE9IjIyMiIgeTE9IjEwNS4wIiB4Mj0iMjQ4IiB5Mj0iMTA1LjAiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CjxyZWN0IHg9IjI1MCIgeT0iNzAiIHdpZHRoPSIxODAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSIjMTRiOGE2IiBzdHJva2U9IiMxNGI4YTYiIHN0cm9rZS13aWR0aD0iMSIvPgo8dGV4dCB4PSIyNzAiIHk9Ijk4IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IndoaXRlIiBmb250LXdlaWdodD0iYm9sZCI+RGF5cyAzMS02MDwvdGV4dD4KPHRleHQgeD0iMjcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIGZvbnQtd2VpZ2h0PSI2MDAiPkFsZXJ0IFR1bmluZzwvdGV4dD4KPHRleHQgeD0iMjcwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuODUiPlJlZHVjZSBub2lzZTwvdGV4dD4KPGxpbmUgeDE9IjQzMiIgeTE9IjEwNS4wIiB4Mj0iNDU4IiB5Mj0iMTA1LjAiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CjxyZWN0IHg9IjQ2MCIgeT0iNzAiIHdpZHRoPSIxODAiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSIjMTBiOTgxIiBzdHJva2U9IiMxMGI5ODEiIHN0cm9rZS13aWR0aD0iMSIvPgo8dGV4dCB4PSI0ODAiIHk9Ijk4IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IndoaXRlIiBmb250LXdlaWdodD0iYm9sZCI+RGF5cyA2MS05MDwvdGV4dD4KPHRleHQgeD0iNDgwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIGZvbnQtd2VpZ2h0PSI2MDAiPlNjcmlwdCBMaWJyYXJ5PC90ZXh0Pgo8dGV4dCB4PSI0ODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSxzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC44NSI+U2VsZi1pbXByb3Zpbmcgc2NyaXB0czwvdGV4dD4KPGxpbmUgeDE9IjQwIiB5MT0iMTcwIiB4Mj0iNjQwIiB5Mj0iMTcwIiBzdHJva2U9IiM0NzU1NjkiIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgo8dGV4dCB4PSIzNDAuMCIgeT0iMTg4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5NGEzYjgiIGZvbnQtd2VpZ2h0PSI2MDAiPjkwLURheSBNU1AgVHJhbnNmb3JtYXRpb24gUm9hZG1hcDwvdGV4dD4KPC9zdmc+" alt="90-Day MSP Roadmap Timeline" style="width:100%; height:auto; display:block; margin:1.5rem auto; max-width:700px;" />
+
 
 | Week | Action | Outcome |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | 1-2 | Export ticket history, build test set, measure baseline | You know your current triage accuracy |
 | 3-4 | Deploy ticket triage loop in sandbox, run overnight experiments | 70-80% auto-triage on common patterns |
 | 5-6 | Deploy alert tuning loop, measure baseline false positive rate | Alert noise starts dropping |
@@ -157,11 +162,11 @@ Before you start any loop, you need these in place:
 ## The Economics
 
 | Metric | Before Auto-Improve | After 90 Days | Annual Savings (50-tech MSP) |
-|--------|-------------------|---------------|-------------------------------|
-| Ticket triage accuracy | 60% (many re-categorised) | 80%+ | ~2,000 technician-hours/year |
-| Alert false positive rate | 40-60% | 15-25% | ~1,500 NOC-hours/year |
-| Script failure rate | 5-10% on edge cases | 1-2% | ~500 hours of rework/year |
-| **Total** | | | **~4,000 hours = $160K-$200K/year** |
+| ------ | ------------------- | ------------- | ---------------------------- |
+| Ticket triage accuracy | 60% (many re-categorised) | 80%+ | \~2,000 technician-hours/year |
+| Alert false positive rate | 40-60% | 15-25% | \~1,500 NOC-hours/year |
+| Script failure rate | 5-10% on edge cases | 1-2% | \~500 hours of rework/year |
+| **Total** |  |  | **\~4,000 hours = $160K-$200K/year** |
 
 At a fully loaded technician cost of $40-50/hour, the first three loops pay for themselves within the first quarter. The compute cost for running the loops is negligible — under $100/month for an MSP of any size.
 
@@ -178,19 +183,18 @@ After 12 months, the gap between an MSP running auto-improve loops and one using
 Not more AI tools. Not bigger budgets. Three things:
 
 1. **Define "better" clearly enough to hand to a machine.** This is the hardest part. "Improve service quality" is not a metric. "Reduce ticket misroutes from 40% to below 15%" is.
-
 2. **Protect experimentation time.** The first month requires someone to build test sets, measure baselines, and review experiment logs. That is 5-10 hours/week from your best technician. Guard that time.
-
 3. **Accept that most experiments fail.** Karpathy's agent ran 700 experiments. 20 worked. That is a 3% hit rate. The value is in the iteration speed, not the success rate. If your culture punishes failed experiments, you will never get auto-improvement off the ground.
 
 The question is not whether auto-improvement is coming to managed services. It is whether your MSP can define what better means clearly enough to let a machine pursue it overnight.
 
----
+***
 
 *Based on the Karpathy Loop pattern from [The Karpathy Loop Reference](http://ubuntu4:3002/posts/the-karpathy-loop-reference-guide/). Source video: [Nate B Jones — Karpathy's Agent Ran 700 Experiments While He Slept](https://www.youtube.com/watch?v=xnG8h3UnNFI).*
-- [Beyond IT: Extending the Loop to Every Business Function](http://ubuntu4:3002/posts/beyond-it-extending-the-karpat/)
-- [Taking the Loop to Client Environments](http://ubuntu4:3002/posts/taking-the-karpathy-loop-to-cl/)
-- [The LLM-Wiki Pattern for MSP Knowledge Management](http://ubuntu4:3002/posts/the-llm-wiki-pattern-write-tim/)
+
+* [Beyond IT: Extending the Loop to Every Business Function](http://ubuntu4:3002/posts/beyond-it-extending-the-karpat/)
+* [Taking the Loop to Client Environments](http://ubuntu4:3002/posts/taking-the-karpathy-loop-to-cl/)
+* [The LLM-Wiki Pattern for MSP Knowledge Management](http://ubuntu4:3002/posts/the-llm-wiki-pattern-write-tim/)
 
 **Tags**: msp, managed-services, auto-improvement, karpathy-loop, ai-agents, ticket-triage, rmm, psa, it-automation
 **Categories**: AI Automation, Business Strategy
