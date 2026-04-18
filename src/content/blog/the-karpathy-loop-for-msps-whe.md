@@ -5,6 +5,8 @@ postSlug: "the-karpathy-loop-for-msps-whe"
 description: "The Karpathy Loop for MSPs: Where Auto-Improvement Lands in Managed Services"
 tags:
   - msp
+series: karpathy-msp
+seriesEntry: true
 ---
 
 You run an MSP. You manage other companies' IT — their servers, their networks, their projects, their helpdesks. You have ticket queues, alert floods, patching schedules, client onboarding checklists, and project timelines that are always wrong.

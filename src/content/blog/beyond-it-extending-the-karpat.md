@@ -5,6 +5,7 @@ postSlug: "beyond-it-extending-the-karpat"
 description: "Beyond IT: Extending the Karpathy Loop to Every MSP Business Function"
 tags:
   - msp
+series: karpathy-msp
 ---
 
 You've been running the Karpathy Loop for six months. Ticket routing is tighter. Alert tuning actually works. Your script library evolves itself. The triplet — one editable file, one metric, one fixed time budget — is muscle memory now.

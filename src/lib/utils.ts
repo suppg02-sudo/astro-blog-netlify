@@ -12,6 +12,10 @@ export async function getAllPosts(): Promise<BlogFrontmatter[]> {
       postSlug: entry.data.postSlug || entry.id.replace(/\.md$/, ""),
     }))
     .filter((post) => !post.draft)
+    .filter((post) => {
+      if (!post.series) return true;
+      return post.seriesEntry === true;
+    })
     .sort(
       (a, b) =>
         Math.floor(new Date(b.pubDatetime).getTime() / 1000) -

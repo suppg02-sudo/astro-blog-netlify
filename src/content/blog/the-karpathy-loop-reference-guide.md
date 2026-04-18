@@ -10,6 +10,7 @@ tags:
   - self-improvement
   - agent-harness
   - msp
+series: karpathy-msp
 ---
 
 # The Karpathy Loop Reference: Auto-Research, Auto-Agent, and Local Hard Takeoff

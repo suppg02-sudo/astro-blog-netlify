@@ -5,6 +5,7 @@ postSlug: "taking-the-karpathy-loop-to-cl"
 description: "Taking the Karpathy Loop to Client Environments: The Customer Domain"
 tags:
   - msp
+series: karpathy-msp
 ---
 
 **Part 6 of the [Karpathy Loop for MSPs series](http://ubuntu4:3002/posts/the-karpathy-loop-reference-guide/)**

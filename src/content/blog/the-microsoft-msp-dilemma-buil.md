@@ -5,6 +5,7 @@ postSlug: "the-microsoft-msp-dilemma-buil"
 description: "The Microsoft MSP Dilemma: Build the Loop in Open Source, Run It on What You Know"
 tags:
   - msp
+series: karpathy-msp
 ---
 
 Both MSPs run on Microsoft. Intune for device management. Entra ID for identity. Defender for endpoint protection. M365 for everything else. Their technicians live in PowerShell, Azure portals, and Teams. Their developers use GitHub Copilot. Their clients pay for Microsoft licences and expect Microsoft-compatible everything.

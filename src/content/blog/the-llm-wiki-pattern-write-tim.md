@@ -5,6 +5,7 @@ postSlug: "the-llm-wiki-pattern-write-tim"
 description: "The LLM-Wiki Pattern: Write-Time Knowledge Compilation for MSPs"
 tags:
   - msp
+series: karpathy-msp
 ---
 
 Most MSPs have a knowledge problem masquerading as a tooling problem. You buy a better PSA, a smarter RMM, a fancier documentation platform. None of it fixes the core issue: the gap between what your team collectively knows about a client's environment and what any individual technician can access when they need it.
