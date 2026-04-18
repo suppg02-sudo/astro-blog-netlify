@@ -51,6 +51,51 @@ const { title, author, description, ogImage, pubDatetime, tags, postSlug } = fro
   <Footer />
 </Layout>
 
+<script is:inline type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(runMermaid, 2000);
+  });
+
+  function runMermaid() {
+    if (typeof mermaid === 'undefined') {
+      console.log('Mermaid undefined - CDN not loaded');
+      return;
+    }
+
+    var pres = document.querySelectorAll('pre[data-language="mermaid"], pre code.language-mermaid');
+    var targets = [];
+
+    pres.forEach(function(el) {
+      var pre = el.tagName === 'CODE' ? el.parentElement : el;
+      if (pre) targets.push(pre);
+    });
+
+    targets = Array.from(new Set(targets));
+    console.log('Mermaid: found', targets.length, 'diagram blocks');
+
+    targets.forEach(function(pre, idx) {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'mermaid';
+      wrapper.style.cssText = 'display:flex;justify-content:center;margin:2rem 0;overflow-x:auto;';
+      var raw = pre.textContent.trim();
+      wrapper.textContent = raw;
+      pre.parentNode.replaceChild(wrapper, pre);
+      mermaid.render('mermaid-' + idx, raw).then(function(info) {
+        wrapper.innerHTML = info.svg;
+        var svg = wrapper.querySelector('svg');
+        if (svg) {
+          svg.style.width = '100%';
+          svg.style.maxWidth = '900px';
+          svg.style.height = 'auto';
+        }
+      }).catch(function(err) {
+        console.error('Mermaid render error:', err.message);
+        wrapper.innerHTML = '<pre style="color:#f871a71;padding:1rem;">Mermaid error: ' + err.message + '</pre>';
+      });
+    });
+  }
+</script>
+
 <style>
   main {
     @apply mx-auto w-full max-w-3xl px-4 pb-12;
@@ -60,5 +105,9 @@ const { title, author, description, ogImage, pubDatetime, tags, postSlug } = fro
   }
   .tags-container {
     @apply my-8;
+  }
+  .mermaid svg {
+    background: transparent;
+    max-width: 900px;
   }
 </style>
