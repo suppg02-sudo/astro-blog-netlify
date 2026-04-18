@@ -703,31 +703,48 @@ mindmap
 <div style="
   border:2px solid rgb(99,102,241);
   border-radius:0.75rem;
-  padding:1.5rem;
-  margin:1.5rem 0;
-  background:rgba(99,102,241,0.05);
+  padding:0;
+  margin:2rem 0;
+  background:rgba(99,102,241,0.03);
+  overflow:hidden;
+  box-shadow:0 4px 24px rgba(99,102,241,0.12);
 ">
 
-**Keyboard Shortcuts**
+<div style="
+  background:rgba(99,102,241,0.1);
+  padding:0.75rem 1.5rem;
+  border-bottom:2px solid rgb(99,102,241);
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+">
+<span style="font-size:1.1rem;">⌨️</span>
+<span style="font-weight:700;color:rgb(99,102,241);font-family:'IBM Plex Mono',monospace;letter-spacing:0.02em;">Keyboard Shortcuts</span>
+</div>
 
-| Shortcut | Action |
-|:---------|:-------|
-| `Ctrl + K` | Open search |
-| `T` | Toggle theme |
-| `G then H` | Go home |
-| `G then P` | Go to posts |
+<div style="padding:0.75rem 1.5rem;">
 
+| Shortcut | Action | Description |
+|:---------|:-------|:------------|
+| `Ctrl + K` | Open search | Full-text fuzzy search across all posts |
+| `T` | Toggle theme | Switch between light and dark mode |
+| `G then H` | Go home | Return to the homepage |
+| `G then P` | Go to posts | Jump to the posts listing |
+| `/` | Quick search | Alternative search trigger |
+
+</div>
 </div>
 
 <div style="
   border-left:4px solid rgb(245,158,11);
   padding:1rem 1.5rem;
   margin:1.5rem 0;
-  background:rgba(245,158,11,0.05);
+  background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(245,158,11,0.02));
   border-radius:0 0.5rem 0.5rem 0;
+  box-shadow:0 2px 12px rgba(245,158,11,0.08);
 ">
 
-**Pro Tip:** Use `details`/`summary` HTML elements in any Markdown post to create collapsible sections. They're automatically styled by the theme — no extra CSS needed.
+**💡 Pro Tip:** Use `details`/`summary` HTML elements in any Markdown post to create collapsible sections. They're automatically styled by the theme — no extra CSS needed.
 
 </div>
 
@@ -735,11 +752,12 @@ mindmap
   border-left:4px solid rgb(16,185,129);
   padding:1rem 1.5rem;
   margin:1.5rem 0;
-  background:rgba(16,185,129,0.05);
+  background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(16,185,129,0.02));
   border-radius:0 0.5rem 0.5rem 0;
+  box-shadow:0 2px 12px rgba(16,185,129,0.08);
 ">
 
-**Fun fact:** This entire post is a single Markdown file. No React components, no build tricks — just HTML + CSS + two `<script>` tags for Chart.js.
+**✅ Fun fact:** This entire post is a single Markdown file. No React components, no build tricks — just HTML + CSS + two `<script>` tags for Chart.js.
 
 </div>
 
