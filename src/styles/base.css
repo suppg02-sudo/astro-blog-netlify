@@ -140,6 +140,15 @@
     max-width: 900px !important;
   }
 
+  /* ===== Charts ===== */
+  .chart-container {
+    @apply relative my-6 w-full;
+    min-height: 220px;
+  }
+  .chart-container canvas {
+    @apply w-full;
+  }
+
   /* ===== scrollbar ===== */
   html {
     overflow-y: scroll;
