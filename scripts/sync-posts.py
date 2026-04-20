@@ -176,6 +176,15 @@ def git_push():
         cwd=REPO_DIR,
         check=True,
     )
+    token = subprocess.run(
+        ["gh", "auth", "token"], capture_output=True, text=True
+    ).stdout.strip()
+    if token:
+        remote_url = f"https://suppg02-sudo:{token}@github.com/suppg02-sudo/astro-blog-netlify.git"
+        subprocess.run(
+            ["git", "remote", "set-url", "origin", remote_url],
+            cwd=REPO_DIR, check=True,
+        )
     subprocess.run(["git", "push", "origin", "main"], cwd=REPO_DIR, check=True)
     print(f"Pushed {changed_count} file changes.")
     return True
