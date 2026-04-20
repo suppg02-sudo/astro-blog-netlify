@@ -5,7 +5,6 @@ postSlug: "from-riding-microsoft-to-ownin"
 description: "From Riding Microsoft to Owning Your Stack: The MSP's Open-Source Migration Play"
 tags:
   - msp
-series: karpathy-msp
 ---
 
 The previous post in this series argued for a hybrid: build the Karpathy Loop in open source, run it on Microsoft surfaces, use Copilot as the agent brain. Ride the stack your clients pay for while owning the improvement engine underneath.

@@ -5,7 +5,6 @@ postSlug: "sops-are-the-program-md-why-st"
 description: "SOPs Are the Program.md: Why Standard Operating Instructions Are the Missing Link in MSP Auto-Improvement"
 tags:
   - msp
-series: karpathy-msp
 ---
 
 When Karpathy ran 700 experiments overnight, the agent was not free to do whatever it wanted. It operated within a plain English instruction file — the program.md — that defined what to explore, what constraints to respect, and what constituted improvement. The agent's intelligence was in execution. The human's intelligence was in the instructions.

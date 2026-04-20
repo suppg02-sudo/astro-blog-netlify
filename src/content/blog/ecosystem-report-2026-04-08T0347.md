@@ -1,0 +1,139 @@
+---
+pubDatetime: 2026-04-08T03:47:40Z
+title: "Ecosystem Analysis Report — 2026-04-08"
+postSlug: "ecosystem-report-2026-04-08T0347"
+description: "Ecosystem Analysis Report — 2026-04-08"
+tags:
+  - automated-report
+  - ecosystem-analysis
+---
+
+<style>
+.sev-section { border-radius: 6px; margin: 1.2rem 0; overflow: hidden; border: 1px solid; }
+.sev-critical { border-color: #ef4444; background: rgba(239,68,68,0.04); }
+.sev-critical > summary { background: rgba(239,68,68,0.12); color: #dc2626; }
+.sev-warning { border-color: #f59e0b; background: rgba(245,158,11,0.04); }
+.sev-warning > summary { background: rgba(245,158,11,0.12); color: #b45309; }
+.sev-positive { border-color: #22c55e; background: rgba(34,197,94,0.04); }
+.sev-positive > summary { background: rgba(34,197,94,0.12); color: #16a34a; }
+.sev-neutral { border-color: #6b7280; background: rgba(107,114,128,0.04); }
+.sev-neutral > summary { background: rgba(107,114,128,0.08); color: #4b5563; }
+.sev-section > summary { padding: 0.6rem 1rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; list-style: none; }
+.sev-section > summary::-webkit-details-marker { display: none; }
+.sev-section > summary::before { content: '▶'; font-size: 0.75rem; transition: transform 0.15s; }
+.sev-section[open] > summary::before { transform: rotate(90deg); }
+.sev-body { padding: 0.8rem 1rem; }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 0.6rem; margin: 0.5rem 0; }
+.summary-card { border-radius: 6px; padding: 0.6rem 0.8rem; text-align: center; }
+.summary-card .sc-val { font-size: 1.4em; font-weight: 700; }
+.summary-card .sc-label { font-size: 0.75em; opacity: 0.7; margin-top: 0.15rem; }
+.sc-red { background: rgba(239,68,68,0.1); color: #dc2626; }
+.sc-amber { background: rgba(245,158,11,0.1); color: #b45309; }
+.sc-green { background: rgba(34,197,94,0.1); color: #16a34a; }
+.sc-blue { background: rgba(59,130,246,0.1); color: #2563eb; }
+</style>
+
+> **TL;DR**: Automated ecosystem analysis across all object types. 4 scanners ran, 251 objects analyzed, 411 issues found.
+
+## Summary
+
+<div class="summary-grid">
+<div class="summary-card sc-blue"><div class="sc-val">🔍 4</div><div class="sc-label">Scanners</div></div>
+<div class="summary-card sc-green"><div class="sc-val">📦 251</div><div class="sc-label">Objects</div></div>
+<div class="summary-card sc-amber"><div class="sc-val">⚠️ 411</div><div class="sc-label">Issues</div></div>
+<div class="summary-card sc-blue"><div class="sc-val">📊 69.4</div><div class="sc-label">Health</div></div>
+</div>
+
+## Analysis Results by Type
+
+| Type | Objects | Issues | Health | Status |
+|------|---------|--------|--------|--------|
+| menus | 90 | 187 | 82.5 | ✅ |
+| schemas | 19 | 18 | 83.5 | ✅ |
+| skills | 122 | 174 | 55.2 | 🔴 |
+| agents | 20 | 32 | 56.5 | 🔴 |
+
+<details class="sev-section sev-positive" >
+<summary>📋 menus — 82/100</summary>
+<div class="sev-body">
+
+**Issues (187):**
+
+- WARNING: No options detected despite menu presence
+- INFO: No defer option — consider adding
+- INFO: No mobile/desktop toggle detected
+- WARNING: No options detected despite menu presence
+- INFO: No defer option — consider adding
+
+</div>
+</details>
+
+
+<details class="sev-section sev-positive" >
+<summary>📋 schemas — 84/100</summary>
+<div class="sev-body">
+
+**Issues (18):**
+
+- INFO: No changelog entries. Version history unknown.
+- INFO: No changelog entries. Version history unknown.
+- INFO: No changelog entries. Version history unknown.
+- INFO: No changelog entries. Version history unknown.
+- INFO: No changelog entries. Version history unknown.
+
+**Recommendations:**
+
+- HIGH: Adopt base-entity inheritance for entity schemas
+- MEDIUM: Add changelog entries to all schemas
+
+</div>
+</details>
+
+
+<details class="sev-section sev-critical" open>
+<summary>📋 skills — 55/100</summary>
+<div class="sev-body">
+
+**Issues (174):**
+
+- WARNING: No context directory
+- WARNING: Very short skill description (<200 words)
+- WARNING: Very short skill description (<200 words)
+- WARNING: No context directory
+- WARNING: Very short skill description (<200 words)
+
+</div>
+</details>
+
+
+<details class="sev-section sev-critical" open>
+<summary>📋 agents — 56/100</summary>
+<div class="sev-body">
+
+**Issues (32):**
+
+- WARNING: No tools defined
+- INFO: No workflow definitions
+- WARNING: No tools defined
+- INFO: No model configuration
+- WARNING: No tools defined
+
+</div>
+</details>
+
+## Scan History
+
+| Date | Scanner | Objects | Issues | Health |
+|------|---------|---------|--------|--------|
+| 2026-04-08 | menus | 90 | 187 | 82.5 | h |
+| 2026-04-08 | schemas | 19 | 18 | 83.5 | h |
+| 2026-04-08 | skills | 122 | 174 | 55.24590163934426 | c |
+| 2026-04-08 | agents | 20 | 32 | 56.5 | c |
+| 2026-04-08 | menus | 90 | 187 | 82.5 | h |
+| 2026-04-08 | schemas | 19 | 18 | 83.5 | h |
+| 2026-04-08 | skills | 122 | 174 | 55.24590163934426 | c |
+| 2026-04-08 | agents | 20 | 32 | 56.5 | c |
+
+---
+
+*This report was automatically generated by the ecosystem scanner.*

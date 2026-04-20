@@ -5,7 +5,6 @@ postSlug: "when-your-sister-company-alrea"
 description: "When Your Sister Company Already Does ML: Overlap and Gaps Between SOC Machine Learning and the Karpathy Loop"
 tags:
   - msp
-series: karpathy-msp
 ---
 
 Your MSP has a sister company running machine learning for SOC management. They process security events at scale, they understand anomaly detection, they have data pipelines, and they talk about false positive rates, precision, and recall as naturally as you talk about SLAs.

@@ -1,0 +1,163 @@
+---
+pubDatetime: 2026-04-01T09:00:00Z
+title: "Memory Health Report — 2026-04-01"
+postSlug: "memory-health-2026-04-01"
+description: "Daily health check: Score 61/100, 1506 memories, DB 41 MB."
+tags:
+  - health-check
+  - automation
+  - report
+  - memory
+---
+
+# Memory System Health Report — 2026-04-01
+
+> **Generated**: 2026-04-01T08:08:27.735153  
+> **Database Size**: 41 MB  
+> **Health Score**: 61/100  
+> **Last Backup**: 2026-03-31 08:07 (24h ago)
+
+## Overview
+
+| Metric | Value |
+|--------|-------|
+| Total Memories | 1506 |
+| Embedding Rate | 89.6% |
+| 90d Avg/Day | 16.5 |
+| 90d Avg/Week | 115.2 |
+| Last 1h | 0 |
+| Last 24h | 19 |
+| Last 7d | 140 |
+| Yesterday | 12 |
+| Today | 8 |
+| Day-over-Day | 0.7x |
+| Week-over-Week | 0.1x |
+
+## Ingestion by Type
+
+| Type | Total | Embedded | Missing | 7d | 30d | Avg Len | Avg Access | Status |
+|------|-------|----------|---------|-----|------|---------|------------|--------|
+| conversation | 674 | 674 | 0 | 0 | 240 | 126 | 0.1 | OK |
+| action | 606 | 544 | 62 | 50 | 174 | 168 | 3.2 | WARN |
+| decision | 99 | 65 | 34 | 31 | 63 | 230 | 3.9 | WARN |
+| exchange | 71 | 67 | 4 | 3 | 71 | 76 | 18.3 | WARN |
+| opencode-exchange | 56 | 0 | 56 | 56 | 56 | 68 | 0.7 | WARN |
+
+## Daily Ingestion Trend (30 Days)
+
+| Date | Ingested | Embedded | Chart |
+|------|----------|----------|-------|
+| 2026-03-02 |     1 |     1 |  |
+| 2026-03-04 |    90 |    90 | ############# |
+| 2026-03-05 |    21 |    21 | ### |
+| 2026-03-06 |   131 |   131 | #################### |
+| 2026-03-07 |    22 |    22 | ### |
+| 2026-03-09 |    25 |    25 | ### |
+| 2026-03-10 |     2 |     2 |  |
+| 2026-03-11 |    26 |    26 | ### |
+| 2026-03-12 |    24 |    24 | ### |
+| 2026-03-13 |     1 |     1 |  |
+| 2026-03-15 |    14 |    14 | ## |
+| 2026-03-16 |    63 |    63 | ######### |
+| 2026-03-17 |     3 |     3 |  |
+| 2026-03-18 |     1 |     1 |  |
+| 2026-03-19 |     4 |     4 |  |
+| 2026-03-20 |     6 |     6 |  |
+| 2026-03-21 |     5 |     5 |  |
+| 2026-03-22 |     8 |     8 | # |
+| 2026-03-23 |     4 |     1 |  |
+| 2026-03-24 |     8 |     0 | # |
+| 2026-03-25 |    20 |     0 | ### |
+| 2026-03-26 |    16 |     0 | ## |
+| 2026-03-27 |    17 |     0 | ## |
+| 2026-03-28 |    49 |     0 | ####### |
+| 2026-03-29 |    12 |     0 | # |
+| 2026-03-30 |    11 |     0 | # |
+| 2026-03-31 |    12 |     0 | # |
+| 2026-04-01 |     8 |     0 | # |
+
+## Weekly Ingestion Trend
+
+| Week | Ingested | Chart |
+|------|----------|-------|
+| 2026-03-30 |    31 | #### |
+| 2026-03-23 |   126 | ################### |
+| 2026-03-16 |    90 | ############# |
+| 2026-03-09 |    92 | ############# |
+| 2026-03-02 |   265 | ######################################## |
+| 2026-02-23 |    24 | ### |
+| 2026-02-16 |     1 |  |
+| 2026-02-09 |   182 | ########################### |
+| 2026-02-02 |   141 | ##################### |
+| 2026-01-26 |    82 | ############ |
+| 2026-01-19 |   101 | ############### |
+| 2026-01-12 |    61 | ######### |
+
+## Top 20 Tags
+
+| Tag | Count | Chart |
+|-----|-------|-------|
+| hugo |   161 | ############################## |
+| #conversation |   156 | ############################# |
+| youtube |   138 | ######################### |
+| automatic |   126 | ####################### |
+| smart-checkpoint |   126 | ####################### |
+| blog-post |   120 | ###################### |
+| automation |   115 | ##################### |
+| conversation |   113 | ##################### |
+| flow |    89 | ################ |
+| workflow |    85 | ############### |
+| output |    85 | ############### |
+| mermaid |    84 | ############### |
+| transcript |    83 | ############### |
+| documentation |    78 | ############## |
+| research |    77 | ############## |
+| exchange |    67 | ############ |
+| openmemory |    66 | ############ |
+| opencode |    65 | ############ |
+| #action |    62 | ########### |
+| test |    62 | ########### |
+
+## Scope Breakdown
+
+| Scope | Count | Embedded |
+|-------|-------|----------|
+| user | 1505 | 1349 |
+| project | 1 | 1 |
+
+## Gap Analysis
+
+| Issue | Count | Severity |
+|-------|-------|----------|
+| Missing Embeddings | 156 | CRITICAL |
+| No Tags | 22 | WARNING |
+| No Metadata | 21 | WARNING |
+| Never Accessed | 1240 | CRITICAL |
+| Very Short Content | 25 | WARNING |
+| **Recent Missing Embed (7d)** | 140 | CRITICAL |
+
+## Table Sizes
+
+| Table | Size |
+|-------|------|
+| flows | 40 kB |
+| memories | 17 MB |
+| memory_relationships | 96 kB |
+| skill_usage | 64 kB |
+| tool_usage | 64 kB |
+
+## Health Score
+
+**61/100**
+
+- WARNING: 140 memories in the last 7 days lack embeddings
+- INFO: 1240 memories have never been accessed via search
+
+## Recommendations
+
+1. **Backfill embeddings**: 156 memories need embedding generation
+2. **Tag cleanup**: 22 memories have no tags — consider tagging during capture
+4. **Dead memory audit**: 1240 memories never accessed — consider cleanup or re-indexing
+
+---
+*Generated by `memory-health-check.py` at 2026-04-01T08:08:27.735153*

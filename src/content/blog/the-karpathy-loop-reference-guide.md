@@ -4,13 +4,12 @@ title: "The Karpathy Loop Reference: Auto-Research, Auto-Agent, and Local Hard T
 postSlug: "the-karpathy-loop-reference-guide"
 description: "The Karpathy Loop Reference: Auto-Research, Auto-Agent, and Local Hard Takeoff"
 tags:
-  - ai-agents
   - auto-research
-  - karpathy-loop
-  - self-improvement
   - agent-harness
   - msp
-series: karpathy-msp
+  - ai-agents
+  - karpathy-loop
+  - self-improvement
 ---
 
 # The Karpathy Loop Reference: Auto-Research, Auto-Agent, and Local Hard Takeoff

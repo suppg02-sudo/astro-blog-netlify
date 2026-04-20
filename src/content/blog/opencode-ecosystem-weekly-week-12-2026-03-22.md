@@ -1,0 +1,139 @@
+---
+pubDatetime: 2026-03-22T06:00:10Z
+title: "OpenCode Ecosystem Weekly: Week 12 2026-03-22"
+postSlug: "opencode-ecosystem-weekly-week-12-2026-03-22"
+description: "OpenCode Ecosystem Weekly: Week 12 2026-03-22"
+tags:
+  - weekly-update
+  - opencode
+  - ecosystem
+  - ai-agents
+---
+
+# OpenCode Ecosystem Weekly Report
+
+**Week 12** | **2026-03-22**
+
+This weekly report tracks the OpenCode ecosystem: plugins, agent harnesses, skills frameworks, and research agents.
+
+## 📈 Notable Changes This Week
+
+### Superpowers
+
+- **Stars**: 88,497 → 103,705 (⬆️ +15,208)
+
+### oh-my-opencode
+
+- **Stars**: 40,523 → 42,230 (⬆️ +1,707)
+
+### GSD
+
+- **Stars**: 31,115 → 38,227 (⬆️ +7,112)
+
+### CC-Switch
+
+- **Stars**: 28,909 → 31,510 (⬆️ +2,601)
+
+### Kilo
+
+- **Stars**: 16,775 → 17,039 (⬆️ +264)
+
+### OpenClaw
+
+- **Stars**: 317,425 → 328,984 (⬆️ +11,559)
+
+### Trellis
+
+- **Stars**: 3,721 → 3,940 (⬆️ +219)
+
+### OpenAgentsControl
+
+- **Stars**: 2,743 → 2,881 (⬆️ +138)
+
+### GSD-OpenCode
+
+- **Stars**: 519 → 559 (⬆️ +40)
+
+### CC-Switch-CLI
+
+- **Stars**: 1,142 → 1,266 (⬆️ +124)
+
+### Weave
+
+- **Stars**: 16 → 23 (⬆️ +7)
+
+### Zenox
+
+- **Stars**: 38 → 40 (⬆️ +2)
+
+### OpenDev
+
+- **Stars**: 230 → 311 (⬆️ +81)
+
+### opencode-agent-skills
+
+- **Stars**: 97 → 106 (⬆️ +9)
+
+### Mini-Coder
+
+- **Stars**: 29 → 31 (⬆️ +2)
+
+### AutoResearch
+
+- **Stars**: 38,435 → 48,626 (⬆️ +10,191)
+
+### DeepResearchAgent
+
+- **Stars**: 3,247 → 3,272 (⬆️ +25)
+
+### AI-Researcher
+
+- **Stars**: 4,681 → 4,897 (⬆️ +216)
+
+### AgentLaboratory
+
+- **Stars**: 5,389 → 5,405 (⬆️ +16)
+
+### Swarms
+
+- **Stars**: 5,900 → 5,930 (⬆️ +30)
+
+## 📊 Complete Project Snapshot
+
+| Project | GitHub | Stars | Type | Focus |
+|---------|--------|-------|------|-------|
+| **OpenClaw** | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 328,984 | Standalone Agent | Full CLI agent |
+| **Superpowers** | [obra/superpowers](https://github.com/obra/superpowers) | 103,705 | Skills Framework | Workflow discipline |
+| **AutoResearch** | [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 48,626 | Research Agent | Autonomous ML research |
+| **oh-my-opencode** | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 42,230 | Agent Harness | Parallel orchestration |
+| **GSD** | [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | 38,227 | Spec Framework | Context engineering |
+| **CC-Switch** | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 31,510 | Config Manager | Multi-tool sync |
+| **Kilo** | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | 17,039 | Fork | 500+ models |
+| **Swarms** | [kyegomez/swarms](https://github.com/kyegomez/swarms) | 5,930 | Research Framework | Multi-agent orchestration |
+| **AgentLaboratory** | [SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | 5,405 | Research Framework | Multi-phase lab |
+| **AI-Researcher** | [HKUDS/AI-Researcher](https://github.com/HKUDS/AI-Researcher) | 4,897 | Research Framework | Idea generation |
+| **Trellis** | [mindfold-ai/Trellis](https://github.com/mindfold-ai/Trellis) | 3,940 | Context Framework | Multi-platform |
+| **DeepResearchAgent** | [SkyworkAI/DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | 3,272 | Research Agent | Hierarchical multi-agent |
+| **OpenAgentsControl** | [darrenhinde/OpenAgentsControl](https://github.com/darrenhinde/OpenAgentsControl) | 2,881 | Agent System | Team workflows |
+| **CC-Switch-CLI** | [SaladDay/cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) | 1,266 | Config Manager CLI | CLI version |
+| **GSD-OpenCode** | [rokicool/gsd-opencode](https://github.com/rokicool/gsd-opencode) | 559 | Spec Framework Fork | OpenCode adaptation |
+| **OpenDev** | [opendev-to/opendev](https://github.com/opendev-to/opendev) | 311 | Standalone (Rust) | Terminal-native |
+| **opencode-agent-skills** | [joshuadavidthomas/opencode-agent-skills](https://github.com/joshuadavidthomas/opencode-agent-skills) | 106 | Skills Plugin | Dynamic skills |
+| **Zenox** | [CyberBoyAyush/zenox](https://github.com/CyberBoyAyush/zenox) | 40 | Agent Plugin | 4 specialized agents |
+| **URSA** | [lanl/ursa](https://github.com/lanl/ursa) | 40 | Research Agent | Scientific workflows |
+| **Mini-Coder** | [sacenox/mini-coder](https://github.com/sacenox/mini-coder) | 31 | CLI Agent | Lightweight |
+| **Weave** | [pgermishuys/opencode-weave](https://github.com/pgermishuys/opencode-weave) | 23 | Agent Plugin | 8 weaving agents |
+
+
+---
+
+## 📚 Resources
+
+- [OpenCode Alternatives Guide](https://ohmyopencode.com/opencode-alternatives/)
+- [CLI Tools Comparison 2026](https://tembo.io/blog/coding-cli-tools-comparison)
+- [Harness Engineering Article](https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e)
+
+---
+
+*Automatically generated by OpenCode Weekly Tracker*  
+*Next report: 2026-03-29*

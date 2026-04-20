@@ -3,7 +3,7 @@ set -euo pipefail
 
 DIRECTUS_URL="http://localhost:8055"
 DIRECTUS_TOKEN="direct-api-ef6f6891c6ffe9b8"
-REPO_DIR="/media/docker/astro-blog-netlify"
+REPO_DIR="/root/astro-blog-netlify"
 BLOG_DIR="$REPO_DIR/src/content/blog"
 
 echo "=== Sync Posts: Fetching public posts from Directus ==="
