@@ -4,11 +4,11 @@ title: "fff.nvim: The Fuzzy File Finder That Bridges AI Agents and Your Codebase
 postSlug: "fff-nvim-the-fuzzy-file-finder"
 description: "fff.nvim: The Fuzzy File Finder That Bridges AI Agents and Your Codebase"
 tags:
-  - 3a86ff
-  - 06d6a0
+  - "3a86ff"
+  - "06d6a0"
   - fb5607
-  - 8338ec
-  - 000
+  - "8338ec"
+  - "000"
 ---
 
 > *freakin fast fuzzy file finder* — and this time, the name isn't exaggerating.

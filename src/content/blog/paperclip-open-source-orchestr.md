@@ -30,12 +30,12 @@ It It looks like a task manager — but under the hood it has org charts, budget
 
 | Tool | Logo | Description |
 | ---- | ---- | ----------- |
-| OpenClaw | ![OpenClaw](doc/assets/logos/openclaw.svg) | AI Agent |
-| Claude Code | ![Claude](doc/assets/logos/claude.svg) | AI Assistant |
-| Codex | ![Codex](doc/assets/logos/codex.svg) | AI Agent |
-| Cursor | ![Cursor](doc/assets/logos/cursor.svg) | AI Editor |
-| Bash | ![Bash](doc/assets/logos/bash.svg) | Shell Scripts |
-| HTTP | ![HTTP](doc/assets/logos/http.svg) | REST APIs |
+| OpenClaw | `[logo]` | AI Agent |
+| Claude Code | `[logo]` | AI Assistant |
+| Codex | `[logo]` | AI Agent |
+| Cursor | `[logo]` | AI Editor |
+| Bash | ![Bash](/favicon.svg) | Shell Scripts |
+| HTTP | `[logo]` | REST APIs |
 
 *If it can receive a heartbeat, it's hired.*
 

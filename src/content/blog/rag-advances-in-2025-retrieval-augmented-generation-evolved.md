@@ -7,7 +7,7 @@ tags:
   - AI
   - vector-databases
   - retrieval-augmented-generation
-  - 2025
+  - "2025"
   - production-grade
   - advancements
   - memory-systems

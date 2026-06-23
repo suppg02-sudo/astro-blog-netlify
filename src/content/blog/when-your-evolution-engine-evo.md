@@ -4,7 +4,7 @@ title: "When Your Evolution Engine Evolved Wrong"
 postSlug: "when-your-evolution-engine-evo"
 description: "When Your Evolution Engine Evolved Wrong"
 tags:
-  - 1
+  - "1"
 ---
 
 We built a self-improving system that was supposed to make our prompts and menus smarter over time. Instead, it spent weeks auditing database schemas that nobody asked it to check. Here's how we found the drift, diagnosed it, and built the bridges back.

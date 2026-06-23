@@ -8,7 +8,7 @@ tags:
   - stress-test
   - scalability
   - hybrid-memory
-  - 100k-records
+  - "100k-records"
 ---
 
 ## Executive Summary

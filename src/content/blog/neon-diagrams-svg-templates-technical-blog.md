@@ -4,11 +4,11 @@ title: "Neon Diagrams: SVG Templates for Technical Blog Posts"
 postSlug: "neon-diagrams-svg-templates-technical-blog"
 description: "The three modes above show how option cards work — lettered choices with emoji, title, and description. This pattern is perfect for presenting architectural decisions, tool comparisons, or mode select"
 tags:
-  - 0a0020
-  - 00ff41
-  - 00ffff
+  - "0a0020"
+  - "00ff41"
+  - "00ffff"
   - b388ff
-  - 00bfa5
+  - "00bfa5"
 ---
 
 # Neon Diagrams: SVG Templates for Technical Blog Posts

@@ -4,7 +4,7 @@ title: "GLM-5 in Practice: What the Hype Misses"
 postSlug: "glm-5-in-practice-what-the-hyp"
 description: "GLM-5 in Practice: What the Hype Misses"
 tags:
-  - 44
+  - "44"
 ---
 
 Ishank Choudhary's [Medium article](https://medium.com/codetodeploy/glm-5-the-developers-secret-weapon-i-didn-t-know-i-needed-5202064bf899) on GLM-5 caught my attention — not because of the enthusiasm, but because I'm running GLM-5 daily as the backbone of my development environment. Let me separate what's real from what's marketing fluff.

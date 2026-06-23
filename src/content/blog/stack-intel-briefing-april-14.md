@@ -4,7 +4,7 @@ title: "Stack Intel Briefing - April 14, 2026"
 postSlug: "stack-intel-briefing-april-14"
 description: "Stack Intel Briefing - April 14, 2026"
 tags:
-  - 8217
+  - "8217"
 ---
 
 > 15 items curated for your stack. **15 actionable updates.**

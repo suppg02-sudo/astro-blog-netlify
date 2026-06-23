@@ -8,7 +8,7 @@ tags:
   - developer tools
   - GitHub trending
   - AI tools
-  - 2026
+  - "2026"
 ---
 
 The AI development landscape is evolving at breakneck speed in 2026, with new tools and frameworks emerging almost weekly. This month's analysis reveals some fascinating trends that are fundamentally changing how developers approach coding, debugging, and software architecture.

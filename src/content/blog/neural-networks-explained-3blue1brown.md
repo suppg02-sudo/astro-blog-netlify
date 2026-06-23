@@ -7,7 +7,7 @@ tags:
   - educational
   - machine-learning
   - neural-networks
-  - 3blue1brown
+  - "3blue1brown"
 ---
 
 *Summary of [3Blue1Brown's "But what is a neural network?"](https://www.youtube.com/watch?v=aircAruvnKk) (18 min)*

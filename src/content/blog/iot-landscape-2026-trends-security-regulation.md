@@ -19,7 +19,7 @@ tags:
   - IoT
   - smart home
   - cybersecurity
-  - 5G
+  - "5G"
 ---
 
 The Internet of Things is no longer a futuristic concept or a buzzword on conference slides. In early 2026, we are living inside the IoT era, with an estimated **25 billion connected devices** worldwide and a market projected to reach **$1.3 trillion** this year. But the story of IoT in 2026 is not simply about more devices. It is about a fundamental shift from passive data collection to **intelligent, autonomous decision-making** at the edge, underpinned by sweeping new regulations and a maturing security posture.

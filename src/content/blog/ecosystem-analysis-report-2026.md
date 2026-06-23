@@ -4,11 +4,11 @@ title: "Ecosystem Analysis Report — 2026-04-08 04:39"
 postSlug: "ecosystem-analysis-report-2026"
 description: "Ecosystem Analysis Report — 2026-04-08 04:39"
 tags:
-  - 064e3b
-  - 065f46
-  - 1e293b
-  - 0f172a
-  - 16a34a
+  - "064e3b"
+  - "065f46"
+  - "1e293b"
+  - "0f172a"
+  - "16a34a"
 ---
 
 Automated ecosystem analysis. 4 scanners ran, 244 objects analyzed, 363 issues found.

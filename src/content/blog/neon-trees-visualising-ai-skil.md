@@ -4,8 +4,8 @@ title: "Neon Trees: Visualising AI Skill Architecture as Terminal Art"
 postSlug: "neon-trees-visualising-ai-skil"
 description: "Neon Trees: Visualising AI Skill Architecture as Terminal Art"
 tags:
-  - 00ff41
-  - 00ffff
+  - "00ff41"
+  - "00ffff"
   - ff00ff
   - ff0055
   - ffaa00

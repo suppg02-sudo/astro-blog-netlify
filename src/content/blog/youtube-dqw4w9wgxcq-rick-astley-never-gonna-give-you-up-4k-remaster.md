@@ -5,11 +5,11 @@ postSlug: "youtube-dqw4w9wgxcq-rick-astley-never-gonna-give-you-up-4k-remaster"
 description: "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)"
 tags:
   - music-video
-  - 1987
+  - "1987"
   - rickrolling
-  - 80s-music
+  - "80s-music"
   - never-gonna-give-you-up
-  - 4k-remaster
+  - "4k-remaster"
   - rick-astley
   - pop-music
   - dance-pop

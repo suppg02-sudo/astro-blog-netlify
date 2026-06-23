@@ -4,7 +4,7 @@ title: "Closing the Self-Improvement Loop: How We Made AI Agent Prompts Evolvabl
 postSlug: "closing-the-self-improvement-l"
 description: "Closing the Self-Improvement Loop: How We Made AI Agent Prompts Evolvable"
 tags:
-  - 4
+  - "4"
 ---
 
 The evolution engine was supposed to capture, analyse, improve, and apply changes across our AI infrastructure autonomously. It did the first three. The last one — actually applying improvements to production files — was completely broken. This is the story of diagnosing that gap and building a pipeline that respects a critical constraint: **humans must stay in the loop**.

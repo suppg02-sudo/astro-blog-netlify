@@ -4,7 +4,7 @@ title: "Why Your AI System Needs a Decision Schema (And What Happens Without One
 postSlug: "why-your-ai-system-needs-a-dec"
 description: "Why Your AI System Needs a Decision Schema (And What Happens Without One)"
 tags:
-  - 7
+  - "7"
 ---
 
 After running a self-improving AI system for two weeks, I discovered that **decisions** — the most important data in any AI project — were stored in four different places with four different formats. Here's what went wrong, and the schema I designed to fix it.

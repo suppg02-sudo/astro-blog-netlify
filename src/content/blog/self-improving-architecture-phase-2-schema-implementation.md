@@ -6,7 +6,7 @@ description: "Phase 2 delivered: base-entity, 5 mixins, unified task-schema with
 tags:
   - self-improving-architecture
   - defer-state-machine
-  - 87-health-score
+  - "87-health-score"
   - task-unification
   - schema-implementation
   - phase-2-delivery

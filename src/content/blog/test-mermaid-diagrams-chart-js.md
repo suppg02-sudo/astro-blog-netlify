@@ -4,9 +4,9 @@ title: "Test: Mermaid Diagrams & Chart.js"
 postSlug: "test-mermaid-diagrams-chart-js"
 description: "{"
 tags:
-  - 4ade80
+  - "4ade80"
   - fbbf24
-  - 3b82f6
+  - "3b82f6"
   - f87171
 ---
 

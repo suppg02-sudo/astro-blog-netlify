@@ -9,7 +9,7 @@ tags:
   - gpu
   - gtx-3060
   - uk
-  - 12gb
+  - "12gb"
   - nvidia
 ---
 

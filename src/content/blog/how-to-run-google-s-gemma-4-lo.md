@@ -4,7 +4,7 @@ title: "How to Run Google's Gemma 4 Locally: A Practical Guide"
 postSlug: "how-to-run-google-s-gemma-4-lo"
 description: "How to Run Google's Gemma 4 Locally: A Practical Guide"
 tags:
-  - 3
+  - "3"
 ---
 
 The economics of AI just shifted. Google released Gemma 4 — a family of four open-source, multimodal models licensed under Apache 2 — and the smallest one runs on a phone with zero internet. Here's how to get it running on your own hardware in under ten minutes.

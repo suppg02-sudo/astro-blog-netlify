@@ -4,9 +4,9 @@ title: "Building a Self-Auditing Schema Hierarchy: A Step-by-Step Architecture G
 postSlug: "building-a-self-auditing-schem"
 description: "Building a Self-Auditing Schema Hierarchy: A Step-by-Step Architecture Guide"
 tags:
-  - 3
-  - 1
-  - 2
+  - "3"
+  - "1"
+  - "2"
 ---
 
 > **Mental model**: Your data structures should be their own runtime. A schema shouldn't just describe shape — it should contain the rules for verifying it, the actions agents can take, and the questions they should ask before starting.
