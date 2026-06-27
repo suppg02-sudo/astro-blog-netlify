@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-24T06:00:05Z
 title: "OpenCode Log Analysis Report - 2026-03-24"
 postSlug: "opencode-log-analysis-report-2026-03-24"

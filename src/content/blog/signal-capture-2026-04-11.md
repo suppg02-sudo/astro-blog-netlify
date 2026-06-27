@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-04-11T00:00:00Z
 title: "OpenCode Daily Signal Report - Saturday, April 11, 2026"
 postSlug: "signal-capture-2026-04-11"

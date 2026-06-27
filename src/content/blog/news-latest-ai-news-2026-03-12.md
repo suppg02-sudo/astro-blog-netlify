@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-12T21:51:07Z
 title: "News: latest AI news - 2026-03-12"
 postSlug: "news-latest-ai-news-2026-03-12"

@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-18T12:11:49Z
 title: "System Issues Detected: 5 Problems Found"
 postSlug: "system-issues-report-1211"

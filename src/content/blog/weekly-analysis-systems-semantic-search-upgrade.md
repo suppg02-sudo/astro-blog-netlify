@@ -401,7 +401,7 @@ Both analyzers generate Hugo blog posts with:
 ---
 title: "Weekly Report - Week XX, YYYY"
 date: 2026-03-06
-draft: false
+draft: true
 tags: ["weekly-report", "analysis"]
 categories: ["Analysis"]
 description: "Automated weekly analysis"

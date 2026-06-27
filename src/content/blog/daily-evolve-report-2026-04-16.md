@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-04-16T06:00:44Z
 title: "Daily Evolve Report — 2026-04-16"
 postSlug: "daily-evolve-report-2026-04-16"

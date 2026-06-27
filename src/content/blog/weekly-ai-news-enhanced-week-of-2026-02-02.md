@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-02-08T16:09:32Z
 title: "Weekly AI News Enhanced - Week of 2026-02-02"
 postSlug: "weekly-ai-news-enhanced-week-of-2026-02-02"

@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-26T19:02:07Z
 title: "Test: Mermaid Diagrams & Chart.js"
 postSlug: "test-mermaid-diagrams-chart-js"

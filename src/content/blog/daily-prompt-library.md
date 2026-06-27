@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-06T00:00:00Z
 title: "Daily Prompt Library - 2026-03-06"
 postSlug: "daily-prompt-library"

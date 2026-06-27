@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-25T22:12:38Z
 title: "Weekly Skill Analysis Report - 2026-03-25"
 postSlug: "weekly-skill-analysis-2026-03-25"

@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-25T08:00:00Z
 title: "System Performance Report - March 25, 2026"
 postSlug: "system-report-2026-03-25"

@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-04-01T18:00:00Z
 title: "SVG Rendering Test: Can Astro Handle Inline SVGs?"
 postSlug: "svg-rendering-test"

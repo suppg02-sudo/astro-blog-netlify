@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-04-13T08:01:42Z
 title: "UK Tech Price Tracker — 2026-04-13"
 postSlug: "uk-price-tracker-2026-04-13"

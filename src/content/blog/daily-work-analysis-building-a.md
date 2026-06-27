@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-04-02T11:32:42Z
 title: "Daily Work Analysis: Building an AI-Powered Personal Server Ecosystem"
 postSlug: "daily-work-analysis-building-a"

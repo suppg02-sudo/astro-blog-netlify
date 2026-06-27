@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-14T14:17:25Z
 title: "News: ESP32 and Arduino news - 2026-03-14"
 postSlug: "news-esp32-and-arduino-news-2026-03-14"

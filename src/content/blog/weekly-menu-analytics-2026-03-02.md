@@ -1,4 +1,5 @@
 ---
+draft: true
 pubDatetime: 2026-03-02T13:54:01Z
 title: "Weekly Menu Analytics - 2026-03-02"
 postSlug: "weekly-menu-analytics-2026-03-02"
